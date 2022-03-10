@@ -5,7 +5,7 @@
 
 The basic way to create a reactive plot is to create a Shiny UI with the `fluidPage( )` function. The UI object will set the general layout of the dashboard, and inside that we will define the input box with the numeric input, title and value (similar to Dash). We then create a server function which would take in input, output and session. Inside the function we will use a `reactive( )` expression to tell the server to watch for the changes in inputs. Also, we define the output which tells the UI how to update plots, boxes or texts. We can only call the `reactive( )` expression within a render function or another reactive expression.
 
-We can create a plot reactive to more than one input by simply defining multiple inputs with the help of `--Input( )` functions. Inside the server function we can call the input by calling input with the $ sign (example: `input$a`). We need to give the plot function to `renderPlot( )`. The plot function needs to be designed to accept multiple inputs.
+We can create a plot reactive to more than one input by simply defining multiple inputs with the help of `--Input( )` functions. Inside the server function we can call the input by calling input with the $ sign. We need to give the plot function to `renderPlot( )`. The plot function needs to be designed to accept multiple inputs.
 
 To create more than one reactive output (for example, having a plot and text to print on the screen) we need to add the same input into multiple renders. For example inside the server function an input a can be given to to `renderPlot( )`, `renderTable( )` and `renderText( )` simultaneously. Inside the render functions we should have the functions that create the plot, table, text.
 
@@ -26,6 +26,7 @@ Next, we create a server function which would take in three parameters: `input`,
 Inside the function we will use the `reactive( )` function to create a reactive expression (named 'smp' in the below code). The purpose of this step is to tell the server to watch for the changes in inputs. Also, we define the output object with `renderPlot( )` which stores a rendered plot so that we can pass it back to the UI object for display. We can only call the reactive() expression within a render function or another reactive expression.
 
 <img src="https://github.com/SiqiTao/DSCI532-files/blob/main/media/code1.png" alt="code1" width="500"/>
+
 ```
 ui <- fluidPage(
     numericInput("a", "a_label", value = 10),
@@ -47,6 +48,7 @@ We can create a plot reactive to more than one input by simply defining multiple
 Same as above, we need to pass on the plot function along with the input data to `renderPlot( )`. The output plot needs to be designed to accept multiple inputs and is then given back to the UI object for display.
   
 <img src="https://github.com/SiqiTao/DSCI532-files/blob/main/media/code2.png" alt="code2" width="500"/>
+
 ```
 ui <- fluidPage(
     numericInput("a", "a_label", value = 10),
