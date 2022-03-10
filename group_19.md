@@ -13,9 +13,9 @@ To create more than one reactive output (for example, having a plot and text to 
 
 ##### The basic way to create a reactive plot  
 
-The basic way to create a reactive plot is to create a Shiny app object with the the help of `shinyApp( )` function. This function requires two basic arguments: a UI definition and a function (we name it "server" here) with 3 parameters input, output and session.
+The basic way to create a reactive plot is to create a Shiny app object with the the help of `shinyApp( )` function. This function requires two basic arguments: a UI definition and a function (we name it "server" here) with 3 parameters: input, output and session.
 
-The UI object is built with the `fluidPage( )` function. It will set the general layout of the dashboard, and inside that we can use `--Input( )` functions to define input boxes with the input variable name (inputID), the label and the value to begin with. 
+The UI object is built with the `fluidPage( )` function to set the general layout of the dashboard. Inside that we can use `--Input( )` functions to define input boxes with the input variable name (inputID), the label and the value to begin with. 
 For example, in the sample code below, one input box is defined with 'a' as the variable name (inputID), 10 as the start value and 'a_label' as the title of the box. We then define the output plots with one or more `--Output( )` functions. The parameters inside the `--Output( )` functions come from the server function that we define in the next step. In this specific example, we use `plotOutput( )` to build a graph. 
 
 Next, we create a server function which would take in three parameters: `input`, `output` and `session`.  
