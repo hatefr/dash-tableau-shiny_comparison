@@ -7,7 +7,7 @@ The basic way to create a reactive plot is to create a Shiny UI with the `fluidP
 
 We can create a plot reactive to more than one input by simply defining multiple inputs with the help of `--Input( )` functions. Inside the server function we can call the input by calling input with the $ sign. We need to give the plot function to `renderPlot( )`. The plot function needs to be designed to accept multiple inputs.
 
-To create more than one reactive output (for example, having a plot and text to print on the screen) we need to add the same input into multiple renders. For example inside the server function an input a can be given to to `renderPlot( )`, `renderTable( )` and `renderText( )` simultaneously. Inside the render functions we should have the functions that create the plot, table, text.
+To create more than one reactive output (for example, having a plot and text to print on the screen), we need to add the same input into multiple renders. For example, inside the server function, an input a can be given to to `renderPlot( )`, `renderTable( )` and `renderText( )` simultaneously. Inside the render functions we should have the functions that create the plot, table and text.
 
 ### Long description
 
