@@ -66,7 +66,7 @@ shinyApp(ui, server)
 
 ##### How to create more than one reactive output  
   
-To create more than one reactive output (for example, having a plot, a table and text to print on the screen), we need to add the same input into multiple renders. Specifically, inside the server function below, the passed-on input(s) can be assigned to `renderPlot( )`, `renderTable( )` and `renderText( )` simultaneously. After that, we send the output plot, table and text back to the corresponding `--Oputput( )` functions inside the UI object so that they can be displayed in the layout.
+To create more than one reactive output (for example, having a plot, a table and text to print on the screen), we need to add the same input into multiple renders. Specifically, inside the server function below, the passed-on input(s) can be assigned to `renderPlot( )`, `renderTable( )` and `renderText( )` simultaneously. After that, we send the output plot, table and text back to the corresponding `--Output( )` functions inside the UI object so that they can be displayed in the layout. Other `--Output( )` functions include `imageOutput( )`, `verbatimTextOutput( )`, `htmlOutput( )`, `uiOutput( )`, etc.
 
 <img src="https://github.com/SiqiTao/DSCI532-files/blob/main/media/code3.png" alt="code3" width="500"/>
 
