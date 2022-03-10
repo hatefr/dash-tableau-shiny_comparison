@@ -11,7 +11,7 @@ To create more than one reactive output (for example, having a plot and text to 
 
 ### Long description
 
-##### The basic way to create a reactive plot  
+#### The basic way to create a reactive plot  
 
 The basic way to create a reactive plot is to create a Shiny app object with the the help of `shinyApp( )` function. This function requires two basic arguments: a UI definition and a function (we name it "server" here) with 3 parameters: input, output and session.
 
@@ -41,7 +41,7 @@ server <- function(input, output, session) {
 shinyApp(ui, server)
 ```
 
-##### How to create a plot reactive to more than one input  
+#### How to create a plot reactive to more than one input  
 
 We can create a plot reactive to more than one input by simply defining multiple inputs with the help of `--Input( )` functions. Inside the server function we can retrive the inputs by calling input with the $ sign (example: `input$a`). In the sample code given below, we use an additional `numericInput( )` function to define another variable 'b' with label 'b_label'. Other `--Input( )` functions include `checkboxInput( )`, `dateInput( )`, `selectInput( )`, `textAreaInput()`, etc.
 
@@ -64,7 +64,7 @@ server <- function(input, output, session) {
 shinyApp(ui, server)
 ```
 
-##### How to create more than one reactive output  
+#### How to create more than one reactive output  
   
 To create more than one reactive output (for example, having a plot, a table and text to print on the screen), we need to add the same input into multiple renders. Specifically, inside the server function below, the passed-on input(s) can be assigned to `renderPlot( )`, `renderTable( )` and `renderText( )` simultaneously. After that, we send the output plot, table and text back to the corresponding `--Output( )` functions inside the UI object so that they can be displayed in the layout. Other `--Output( )` functions include `imageOutput( )`, `verbatimTextOutput( )`, `htmlOutput( )`, `uiOutput( )`, etc.
 
