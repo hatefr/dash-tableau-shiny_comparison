@@ -27,7 +27,7 @@ Next, we create a server function which would take in three parameters: `input`,
 
 Inside the function we will use the `reactive( )` function to create a reactive expression (named 'smp' in the below code). The purpose of this step is to tell the server to watch for the changes in inputs. Also, we define the output object with `renderPlot( )` which stores a rendered plot so that we can pass it back to the UI object for display. We can only call the reactive() expression within a render function or another reactive expression.
 
-<img src="media/code1.png" alt="code1" width="500"/>
+<img src="media/code1.png" alt="code1" width="800"/>
 
 ```
 ui <- fluidPage(
@@ -50,7 +50,7 @@ We can create a plot reactive to more than one input by simply defining multiple
 
 Same as above, we need to pass on the plot function along with the input data to `renderPlot( )`. The output plot needs to be designed to accept multiple inputs and is then given back to the UI object for display.
   
-<img src="media/code2.png" alt="code2" width="500"/>
+<img src="media/code2.png" alt="code2" width="800"/>
 
 ```
 ui <- fluidPage(
@@ -72,7 +72,7 @@ shinyApp(ui, server)
   
 To create more than one reactive output (for example, having a plot, a table and text to print on the screen), we need to add the same input into multiple renders. Specifically, inside the server function below, the passed-on input(s) can be assigned to `renderPlot( )`, `renderTable( )` and `renderText( )` simultaneously. After that, we send the output plot, table and text back to the corresponding `--Output( )` functions inside the UI object so that they can be displayed in the layout. Other `--Output( )` functions include `imageOutput( )`, `verbatimTextOutput( )`, `htmlOutput( )`, `uiOutput( )`, etc.
 
-<img src="media/code3.png" alt="code3" width="500"/>
+<img src="media/code3.png" alt="code3" width="800"/>
 
 ```
 ui <- fluidPage(
