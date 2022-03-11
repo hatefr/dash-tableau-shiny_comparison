@@ -4,9 +4,10 @@
 ### Improving performance of a Tableau dashboard
 
 In general, for improving performance of dashboards using Tableau, the recommendations are as below:
-Minimize the number of variables/fields, minimize the number of records and optimize the data extractions.
-Reduce the granularity of the data used for visualization.
-Optimize the number of filters provided in the dashboard and, if possible, materialize the queries from the data source.
+
+- Minimize the number of variables/fields, minimize the number of records and optimize the data extractions.
+- Reduce the granularity of the data used for visualization.
+- Optimize the number of filters provided in the dashboard and, if possible, materialize the queries from the data source.
 
 We can also audit the performance of a dashboard, as in check for performance bottlenecks by running and interpreting the results of a feature provided, i.e. performance recording. This analysis can pinpoint performance issues, such as render times of a dashboard, query execution, geocoding, layout computations, etc. One of the results of this performance audit feature is a Performance Summary dashboard, which highlights the most time consuming events on our dashboard.
 
