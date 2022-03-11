@@ -14,6 +14,10 @@ Dash uses several components that help in building out the "layout" of the graph
 
 Dash’s interactivity is based on a reactive programming paradigm. This means that you can link components with elements of your app that you want to update. If a user interacts with an input component like a dropdown or a range slider, then the output, such as a graph, will react automatically to the changes in the input.
 
+Dash's customizability caters to two main areas:
+1. Addition of external assets to the application such as images or videos.
+2. Customizing the styles of the components such as font, background, etc.
+
 ### Links
 * https://plotly.com/dash/
 * https://realpython.com/python-dash/
