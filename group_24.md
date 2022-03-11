@@ -6,7 +6,13 @@ Plotly's Dash provides a tighlty-integrated frontend that can be written in Pyth
 
 ### Long description
 
-To complete
+Plotly's Dash application is a graphical user interface library for creating analytical web applications. Users of Python who perform data analysis, data exploration, visualization, modelling, instrument control, and reporting will find immediate use for Dash.
+
+Dash uses several components that help in building out the "layout" of the graphical user interface. These components are typically prepackaged in Python libraries. While some of these components come built-in with Dash, the rest need to be installed separately. Some of the most common components that almost evey application includes are:
+1. Dash HTML Components: This provides Python wrappers for HTML elements. It can be used to create elements like headings, paragraphs, or lists.
+2. Dash Core Components: This provides Python abstractions for creating interactive user interfaces. It can be used to create interactive elements such as dropdowns, sliders, radio buttons, checkboxes, and graphs.
+
+Dash’s interactivity is based on a reactive programming paradigm. This means that you can link components with elements of your app that you want to update. If a user interacts with an input component like a dropdown or a range slider, then the output, such as a graph, will react automatically to the changes in the input.
 
 ### Links
 * https://plotly.com/dash/
