@@ -27,7 +27,10 @@ On a Windows or macOS computer, rename the file with a .zip extension (for examp
 
 When you unpackage a workbook, you get a regular workbook file (.twb), along with a folder that contains the data sources and images that were packaged with the workbook.
 
+
 ### Links
+
+Some useful links can be found below:
 
 -   [Learn Tableau](https://www.tableau.com/learn)
 -   [Official Documentation](https://www.tableau.com/support/help)
